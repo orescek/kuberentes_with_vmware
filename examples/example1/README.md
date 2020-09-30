@@ -13,7 +13,7 @@ HELM installed - I do now did some time ago so you have to figure it out
 # Installation
 
 ## MetalLB
-
+```
 kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.1/manifests/metallb.yaml
 ```
 save in file: metallb-config.yaml

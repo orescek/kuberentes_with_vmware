@@ -1,8 +1,11 @@
 # Complete list what needs to be done
 
 I used this sites to set up my "test" site:
+
 https://opensource.com/article/20/3/kubernetes-traefik
+
 and
+
 https://github.com/Thoorium/kubernetes-local-cluster-flannel-metallb-traefik
 
 

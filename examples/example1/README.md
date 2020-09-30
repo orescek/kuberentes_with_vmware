@@ -138,6 +138,6 @@ You should get somthing like:
 traefik                LoadBalancer   100.65.163.132   <YOUR FANCY IP>    80:31369/TCP,443:31622/TCP   1d
 ```
 
-Point it to <YOUR IP>:80 in your browser and enjoy your site, which I have absolutely no idea how it works 
+Point it to ```<YOUR IP>:80``` in your favorite browser(probably works in IE6) and enjoy your site, which I have absolutely no idea how it works 
 
 

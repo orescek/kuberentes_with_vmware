@@ -20,10 +20,15 @@ SSH key
 Fallow the instructions here:
 
 1. step
+
 https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.1/vmware-tanzu-kubernetes-grid-11/GUID-install-tkg-set-up-tkg.html
+
 2.step - Prepare to Deploy Management Clusters to vSphere
+
 https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.1/vmware-tanzu-kubernetes-grid-11/GUID-install-tkg-vsphere.html
+
 3. step - Deploy Management Clusters to vSphere with the Installer Interface
+
 https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.1/vmware-tanzu-kubernetes-grid-11/GUID-install-tkg-vsphere-ui.html
 
 Her you need to do in your console(https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.1/vmware-tanzu-kubernetes-grid-11/GUID-install-tkg-verify-deployment.html):

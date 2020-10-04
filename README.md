@@ -77,12 +77,13 @@ tkg create cluster <cluster_name> --plan=dev
 ```
 It took round 5-10 minutes that cluser was up and running.
 ```
- kubectl config set-cluster <cluster_name> 
+  tkg get credentials <cluster_name> -> get cluster context
+  kubectl config use-context <cluster context>
 ```
 
 ## Scale Cluster
 ```
-tkg scale cluster <cluster_name> -w 2 - investigating why kubectl not show if you scale it 
+tkg scale cluster <cluster_name> -w 2
 ```
 
 

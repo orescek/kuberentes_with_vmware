@@ -11,7 +11,10 @@ I hope it will grow in some nice tuturial someday:)
  Ryzen 7 2800x 64GB 2x 500GB disk
 ## Software
  ESXi 7
- Vcenter(noob here - I needed little less then 500 GB for this)
+ Vcenter(noob here - I needed little less then 500 GB for this - probably we can use smaller size)
+ - I found it usefull that vcenter did not lock direct access to ESXi
+ - I Enabled autostart of VCenter machine in ESXi 
+ 
 ## Other
 SSH key
 
@@ -33,7 +36,7 @@ https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.1/vmware-tanzu-kuberne
 
 Her you need to do in your console(https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.1/vmware-tanzu-kubernetes-grid-11/GUID-install-tkg-verify-deployment.html):
 
-For management cluster(This needs to be doen first):
+For management cluster(This needs to be done first):
 ```
 tkg get management-cluster
 kubectl config use-context my-management-cluster-admin@my-management-cluster 
@@ -53,6 +56,35 @@ https://github.com/traefik/traefik/
 ## Prepare something that  I do not know yet 
 
 # Usage - example
+
+# Cluster Work - How I did it
+
+## Create Clean Cluster
+I had tkg cli and esxi with Vcenter ready. With user TKG-USER as descried in VMware instructions
+### Create Management Cluster
+```
+ tkg init -u
+```
+Fallow web GUI. I used dev with minimal instances. It took round 10-15 min for setup to complete. 
+```
+tkg get management-cluster
+kubectl config use-context <your-name>
+```
+
+## Create Cluster
+```
+tkg create cluster <cluster_name> --plan=dev
+```
+It took round 5-10 minutes that cluser was up and running.
+```
+ kubectl config set-cluster <cluster_name> 
+```
+
+## Scale Cluster
+```
+tkg scale cluster <cluster_name> -w 2 - investigating why kubectl not show if you scale it 
+```
+
 
 # What I need to figure out:
  - Deploy clusters on different datastore
